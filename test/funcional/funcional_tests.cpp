@@ -1,0 +1,1 @@
+// para gerar dll: g++ main.cpp funcional.cpp -L..\..\..\bin -lmyv -o ..\..\..\bin\funcional_test.exe

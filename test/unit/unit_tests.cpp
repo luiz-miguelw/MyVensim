@@ -1,0 +1,1 @@
+// para gerar dll: g++ main.cpp unit_test.cpp -L..\..\..\bin -lmyv -o ..\..\..\bin\unit_test.exe

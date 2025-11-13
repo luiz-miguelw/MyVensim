@@ -1,0 +1,1 @@
+// para gerar dll: g++ -shared fluxo.cpp modelo.cpp sistema.cpp -o ..\..\bin\libmyv.dll 
