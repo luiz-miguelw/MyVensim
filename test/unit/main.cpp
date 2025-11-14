@@ -1,3 +1,6 @@
+// para gerar dll: g++ main.cpp unit_tests.cpp -L../../bin -lmyv -o ../../bin/unit_test.exe
+// export LD_LIBRARY_PATH=.
+
 #include "unit_tests.h"
 #include <iostream>
 

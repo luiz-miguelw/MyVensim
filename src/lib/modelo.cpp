@@ -1,4 +1,4 @@
-// para gerar dll: g++ -shared fluxo.cpp modelo.cpp sistema.cpp -o ../../bin/libmyv.dll 
+// para gerar dll: g++ -shared fluxo.cpp modelo.cpp sistema.cpp -o ../../bin/libmyv.so 
 #include <map> // Necessário para a solução limpa
 
 #include "modelo.h"

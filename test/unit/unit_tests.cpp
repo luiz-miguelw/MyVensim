@@ -1,4 +1,3 @@
-// para gerar dll: g++ main.cpp unit_tests.cpp -L../../bin -lmyv -o ../../bin/unit_test.exe
 
 #include "unit_tests.h"
 #include "../../src/lib/modelo.h"
