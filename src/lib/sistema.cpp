@@ -1,5 +1,3 @@
-// para gerar dll: g++ -shared fluxo.cpp modelo.cpp sistema.cpp -o ../../bin/libmyv.so 
-
 #include "sistema.h"
 #include <string>
 using namespace std;

@@ -35,9 +35,7 @@ all: $(BIN_DIR)/main
 # Se qualquer um deles mudar, a biblioteca será recriada.
 $(LIB_TARGET): $(LIB_SOURCES)
 	@echo "--- Compilando a Biblioteca ($(LIB_TARGET)) ---"
-	
 	@mkdir -p $(BIN_DIR)
-	
 	$(CXX) -shared -fPIC $(LIB_SOURCES) -o $(LIB_TARGET)
 
 
@@ -73,7 +71,6 @@ $(BIN_DIR)/unit_tests: test/unit/main.cpp test/unit/unit_tests.cpp $(LIB_TARGET)
 .PHONY: run_tests
 run_tests: test_func test_unit
 	@echo "--- Executando Testes (Funcional e Unitário) ---"
-	
 	@export LD_LIBRARY_PATH=$(BIN_DIR) && \
 	$(BIN_DIR)/funcional_test && \
 	$(BIN_DIR)/unit_tests
@@ -83,5 +80,14 @@ run_tests: test_func test_unit
 # Remove todos os arquivos do diretório 'bin'
 .PHONY: clean
 clean:
-	
+	@echo "--- Limpando o diretório bin ---"
 	-rm -f $(BIN_DIR)/*
+
+
+# 7. (NOVO) Alvo para EXECUTAR a aplicação principal
+.PHONY: run
+run: $(BIN_DIR)/main
+	@echo "--- Executando Aplicativo Principal ---"
+	@# Exporta o caminho da biblioteca e executa o 'main'
+	@export LD_LIBRARY_PATH=$(BIN_DIR) && \
+	$(BIN_DIR)/main

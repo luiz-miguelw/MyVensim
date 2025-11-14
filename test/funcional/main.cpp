@@ -1,6 +1,3 @@
-// para gerar dll: g++ main.cpp funcional_tests.cpp -L../../bin -llibmyv -o ../../bin/funcional_test.exe
-
-// export LD_LIBRARY_PATH=.
 #ifndef MAIN_FUNCIONAL_TESTS
 #define MAIN_FUNCIONAL_TESTS
 

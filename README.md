@@ -15,7 +15,7 @@ dentro de src execute: ``g++ main.cpp -L..\bin -lmyv -o ..\bin\main.exe``
 Os executaveis e as bibliotecas serão direcionados ao diretorio bin, as vezes ao executar os exe esta dando erro de linkagem, porem é somente rodar o comando ``export LD_LIBRARY_PATH=.`` dentro do bin e rodar os executaveis
 
 # makefile 
-``make`` : Compila a biblioteca libmyv.so e o executável principal main, colocando-os em bin/
+``make run`` : Compila a biblioteca libmyv.so e o executável principal main e após isso iro executálos cuidando automaticamente do LD_LIBRARY_PATH
 
 ``make test_func`` : Compila a biblioteca (se necessário) e o executável funcional_test
 
