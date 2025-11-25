@@ -1,0 +1,26 @@
+<map id="testModeloUnit" name="testModeloUnit">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,233,115,260"/>
+<area shape="rect" id="Node000002" href="$class_modelo.html#ab559af152e55bef00f34ce469e65ce26" title="Adiciona um fluxo ao modelo." alt="" coords="171,5,326,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="62,232,72,195,91,143,120,89,139,64,161,42,170,38,166,42,164,46,143,67,124,92,96,146,77,196,67,234"/>
+<area shape="rect" id="Node000003" href="$class_modelo.html#acb4a8f6c4791526fb6036a3ef09c2914" title="Adiciona um sistema ao modelo." alt="" coords="163,56,334,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="65,232,100,169,127,132,161,99,184,87,181,91,164,103,131,135,104,172,70,234"/>
+<area shape="rect" id="Node000004" href="$class_modelo.html#ac7ce1efbe19c5f725202b49ecd841361" title="Executa a simulação." alt="" coords="190,157,307,184"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="84,231,162,194,183,187,179,191,164,198,88,235"/>
+<area shape="rect" id="Node000005" href="$class_sistema.html#a8d3f0f7118e6d3f7ff9454fec892e946" title="Retorna o valor atual do sistema." alt="" coords="382,107,506,133"/>
+<area shape="poly" id="edge11_Node000001_Node000005" title=" " alt="" coords="68,232,105,186,131,162,162,143,213,125,266,115,319,110,369,112,364,114,319,116,267,120,214,130,164,148,134,166,108,190,73,234"/>
+<area shape="rect" id="Node000007" href="$class_fluxo.html#ae24fd783f11f0b7dde1372071e8d4bc2" title="Obtém o sistema de destino." alt="" coords="186,208,310,235"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="114,237,173,230,169,234,116,242"/>
+<area shape="rect" id="Node000008" href="$class_modelo.html#a7ed7797de6f0ec1dbcbda3e693933164" title="Acessa o vetor de fluxos." alt="" coords="184,259,312,285"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="114,251,171,260,166,263,116,257"/>
+<area shape="rect" id="Node000009" href="$class_sistema.html#aa4de729406de45cdd3244aab26705a0f" title="Retorna o nome do sistema." alt="" coords="183,309,314,336"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="86,258,164,295,184,303,179,305,162,300,86,263"/>
+<area shape="rect" id="Node000010" href="$class_fluxo.html#a61d7665229f1880963cd666c033a71d1" title="Obtém o sistema de origem." alt="" coords="188,360,309,387"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="72,258,111,302,136,325,164,346,176,353,171,354,161,350,133,330,107,306,71,263"/>
+<area shape="rect" id="Node000011" href="$class_modelo.html#a1f6a3c227dccfc13dd70fefec0e397da" title="Acessa o vetor de sistemas." alt="" coords="176,411,320,437"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="67,258,102,325,130,364,164,397,173,403,167,403,161,401,126,367,98,328,66,263"/>
+<area shape="rect" id="Node000012" href="$class_fluxo.html#ae3698724d4b401c01ab0473a25d2ac3e" title="Define a equação que rege o fluxo." alt="" coords="183,461,314,488"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="64,258,77,297,96,348,124,401,143,426,164,447,172,455,167,454,161,451,139,429,120,404,91,350,72,299,64,263"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="302,154,377,136,373,139,304,159"/>
+<area shape="rect" id="Node000006" href="$class_sistema.html#ac618fe3b5a876e73d50c572cfa84835f" title="Define um novo valor para o sistema." alt="" coords="382,157,506,184"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="307,168,369,169,364,172,308,173"/>
+</map>

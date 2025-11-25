@@ -1,0 +1,6 @@
+<map id="Sistema::Sistema" name="Sistema::Sistema">
+<area shape="rect" id="Node000001" title="Construtor de Cópia." alt="" coords="5,29,131,56"/>
+<area shape="rect" id="Node000002" href="$class_sistema.html#acafe2feff82bd1b3bc4cb1e9cab21dfd" title="Construtor Padrão e de Inicialização." alt="" coords="179,29,304,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,40,166,42,161,43,131,45"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="211,28,206,21,210,11,222,5,241,3,262,5,275,14,269,14,260,10,241,8,223,10,214,15,212,20,216,30"/>
+</map>

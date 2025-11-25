@@ -1,0 +1,32 @@
+<map id="Sistema::getValor" name="Sistema::getValor">
+<area shape="rect" id="Node000001" title="Retorna o valor atual do sistema." alt="" coords="484,157,609,184"/>
+<area shape="rect" id="Node000002" href="$funcional__tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title=" " alt="" coords="111,5,262,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="523,144,486,105,462,85,435,68,393,50,348,37,264,24,262,19,349,32,395,45,438,63,465,80,489,101,529,145"/>
+<area shape="rect" id="Node000004" href="$class_modelo.html#ac7ce1efbe19c5f725202b49ecd841361" title="Executa a simulação." alt="" coords="319,132,436,159"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="466,159,437,157,437,152,471,159"/>
+<area shape="rect" id="Node000005" href="$funcional__tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title=" " alt="" coords="103,56,271,83"/>
+<area shape="poly" id="edge12_Node000001_Node000005" title=" " alt="" coords="516,147,480,122,435,98,395,86,352,78,272,71,271,66,353,73,396,81,437,94,483,117,521,147"/>
+<area shape="rect" id="Node000006" href="$funcional__tests_8cpp.html#a60914db64bde71b56d69320797266c29" title=" " alt="" coords="110,107,264,133"/>
+<area shape="poly" id="edge13_Node000001_Node000006" title=" " alt="" coords="507,149,474,135,436,123,392,116,347,112,265,114,263,109,348,107,393,110,437,117,476,130,512,149"/>
+<area shape="rect" id="Node000007" href="$src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="162,183,212,209"/>
+<area shape="poly" id="edge14_Node000001_Node000007" title=" " alt="" coords="467,178,213,197,212,192,470,174"/>
+<area shape="rect" id="Node000008" href="$unit__tests_8cpp.html#ad2979d0f1872baba9cbe2e4127f52442" title=" " alt="" coords="132,233,242,260"/>
+<area shape="poly" id="edge17_Node000001_Node000008" title=" " alt="" coords="467,189,242,238,241,233,471,185"/>
+<area shape="rect" id="Node000010" href="$unit__tests_8cpp.html#a02d4a1e9fc919d5ad6ecbc82b99a6a02" title=" " alt="" coords="328,335,427,361"/>
+<area shape="poly" id="edge15_Node000001_Node000010" title=" " alt="" coords="534,196,496,261,469,295,438,325,419,337,417,332,435,321,465,291,491,258,529,199"/>
+<area shape="rect" id="Node000011" href="$unit__tests_8cpp.html#ac02d657e6a64f4a82a762e836bca1335" title=" " alt="" coords="320,284,435,311"/>
+<area shape="poly" id="edge18_Node000001_Node000011" title=" " alt="" coords="523,194,484,232,438,268,408,286,406,281,435,263,480,227,518,196"/>
+<area shape="rect" id="Node000003" href="$test_2funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="122,39,104,47,57,63,53,59,102,41,126,35"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="353,120,317,83,270,46,247,35,246,30,272,42,321,79,359,120"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="335,125,270,97,239,86,238,81,272,92,340,124"/>
+<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="301,136,265,133,263,128,306,135"/>
+<area shape="poly" id="edge9_Node000004_Node000007" title=" " alt="" coords="308,165,213,192,211,187,312,162"/>
+<area shape="poly" id="edge10_Node000004_Node000008" title=" " alt="" coords="351,167,315,198,272,224,243,236,241,231,270,219,312,194,347,170"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="85,71,56,72,53,67,89,68"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="122,103,102,97,56,81,54,76,104,92,126,100"/>
+<area shape="rect" id="Node000009" href="$test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,284,55,311"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="127,268,56,292,54,287,130,263"/>
+<area shape="poly" id="edge16_Node000010_Node000009" title=" " alt="" coords="312,341,55,304,56,298,314,336"/>
+<area shape="poly" id="edge19_Node000011_Node000009" title=" " alt="" coords="304,300,55,300,55,295,305,295"/>
+</map>

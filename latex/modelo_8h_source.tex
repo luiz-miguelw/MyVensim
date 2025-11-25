@@ -1,0 +1,46 @@
+\doxysection{modelo.\+h}
+\hypertarget{modelo_8h_source}{}\label{modelo_8h_source}\index{src/lib/modelo.h@{src/lib/modelo.h}}
+\mbox{\hyperlink{modelo_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ MODELO\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ MODELO\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sistema_8h}{sistema.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{fluxo_8h}{fluxo.h}}"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_modelo_a3f4c02236d847ee85335d04190cdac27}{Modelo}}\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ std::string\ \mbox{\hyperlink{class_modelo_a9e8c11fbf50849fd04a702b5a9b8b4ac}{nome}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ std::vector<Sistema>\ \mbox{\hyperlink{class_modelo_a181cd874f5c87a783964d70102862fec}{sistemas}};\ \ }
+\DoxyCodeLine{00025\ \ \ \ \ std::vector<Fluxo>\ \mbox{\hyperlink{class_modelo_a6af27ae62ffeb5b526daaef7eac6382e}{fluxos}};\ \ \ \ \ \ }
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_modelo_a3f4c02236d847ee85335d04190cdac27}{Modelo}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_modelo_a9e8c11fbf50849fd04a702b5a9b8b4ac}{nome}}\ =\ \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_modelo_a3f4c02236d847ee85335d04190cdac27}{Modelo}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_modelo_a3f4c02236d847ee85335d04190cdac27}{Modelo}}\&\ obj);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_modelo_ad8d2f3bd61654d2dd486a8e24c6149fc}{\string~Modelo}}();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{class_modelo_a3f4c02236d847ee85335d04190cdac27}{Modelo}}\&\ \mbox{\hyperlink{class_modelo_a310314a57e6212c107770625c187af53}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_modelo_a3f4c02236d847ee85335d04190cdac27}{Modelo}}\&\ obj);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00056\ \ \ \ \ std::string\ \mbox{\hyperlink{class_modelo_a9b6dbaff9a338a538541efc1dbe56805}{getNome}}();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_modelo_abbb77791af3143d9b72cb5b11dcb96cf}{setNome}}(\textcolor{keyword}{const}\ std::string\&\ novo\_nome);}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_modelo_acb4a8f6c4791526fb6036a3ef09c2914}{adicionarSistema}}(\mbox{\hyperlink{class_sistema}{Sistema}}\ sistema);}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_modelo_ab559af152e55bef00f34ce469e65ce26}{adicionarFluxo}}(\mbox{\hyperlink{class_fluxo}{Fluxo}}\ fluxo);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00080\ \ \ \ \ std::vector<Sistema>\&\ \mbox{\hyperlink{class_modelo_a1f6a3c227dccfc13dd70fefec0e397da}{getSistemas}}();}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00086\ \ \ \ \ std::vector<Fluxo>\&\ \mbox{\hyperlink{class_modelo_a7ed7797de6f0ec1dbcbda3e693933164}{getFluxos}}();}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_modelo_ac7ce1efbe19c5f725202b49ecd841361}{executa}}(\textcolor{keywordtype}{int}\ t\_inicial,\ \textcolor{keywordtype}{int}\ t\_final,\ \textcolor{keywordtype}{int}\ acrescimo);}
+\DoxyCodeLine{00097\ \};}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MODELO\_H}}
+
+\end{DoxyCode}

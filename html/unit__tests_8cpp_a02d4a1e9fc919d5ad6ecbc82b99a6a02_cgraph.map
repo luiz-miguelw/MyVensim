@@ -1,0 +1,15 @@
+<map id="testFluxoUnit" name="testFluxoUnit">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,132,105,159"/>
+<area shape="rect" id="Node000002" href="$class_fluxo.html#abaad646df8adca5239f2d3e022001882" title="Executa a equação do fluxo." alt="" coords="153,5,310,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,130,99,87,124,63,151,42,164,37,160,41,154,46,127,67,103,90,68,133"/>
+<area shape="rect" id="Node000003" href="$class_fluxo.html#ae24fd783f11f0b7dde1372071e8d4bc2" title="Obtém o sistema de destino." alt="" coords="169,56,294,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="78,129,152,92,171,87,167,90,154,97,82,134"/>
+<area shape="rect" id="Node000004" href="$class_fluxo.html#a45e12976ddcf2ad4ef468f3131e22f41" title="Obtém o nome do fluxo." alt="" coords="174,107,288,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="104,136,161,129,157,132,106,141"/>
+<area shape="rect" id="Node000005" href="$class_fluxo.html#a61d7665229f1880963cd666c033a71d1" title="Obtém o sistema de origem." alt="" coords="171,157,292,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="105,150,158,158,153,161,106,155"/>
+<area shape="rect" id="Node000006" href="$class_sistema.html#a8d3f0f7118e6d3f7ff9454fec892e946" title="Retorna o valor atual do sistema." alt="" coords="169,208,294,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="80,157,154,194,172,202,167,203,152,198,80,162"/>
+<area shape="rect" id="Node000007" href="$class_fluxo.html#ae3698724d4b401c01ab0473a25d2ac3e" title="Define a equação que rege o fluxo." alt="" coords="166,259,296,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="67,157,103,200,127,224,154,244,165,252,159,252,151,249,124,228,99,204,65,162"/>
+</map>

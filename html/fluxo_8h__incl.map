@@ -1,0 +1,12 @@
+<map id="src/lib/fluxo.h" name="src/lib/fluxo.h">
+<area shape="rect" id="Node000001" title="Declaração da classe Fluxo." alt="" coords="58,5,158,32"/>
+<area shape="rect" id="Node000002" href="$sistema_8h.html" title="Declaração da classe Sistema." alt="" coords="69,80,147,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,30,111,65,105,64,107,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,155,59,181"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="93,35,77,55,60,81,47,111,39,140,34,138,42,109,55,79,73,52,96,30"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="171,80,248,107"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="126,30,182,70,177,71,125,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="97,106,58,146,54,142,92,108"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="83,155,152,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="111,105,116,140,111,139,108,109"/>
+</map>

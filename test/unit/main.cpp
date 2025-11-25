@@ -11,5 +11,5 @@ int main() {
     std::cout << "============================================" << std::endl;
     std::cout << "TODOS OS TESTES UNITARIOS PASSARAM COM SUCESSO." << std::endl;
     
-    return 0; // 0 indica sucesso
+    return 0; 
 }

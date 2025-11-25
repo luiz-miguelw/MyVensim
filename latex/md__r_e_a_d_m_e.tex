@@ -1,0 +1,20 @@
+\chapter{compilar biblioteca }
+\hypertarget{md__r_e_a_d_m_e}{}\label{md__r_e_a_d_m_e}\index{compilar biblioteca@{compilar biblioteca}}
+\label{md__r_e_a_d_m_e_autotoc_md0}%
+\Hypertarget{md__r_e_a_d_m_e_autotoc_md0}%
+
+
+dentro de src/lib execute\+: {\ttfamily g++ -\/shared -\/f\+PIC \doxylink{fluxo_8cpp}{src/lib/fluxo.\+cpp} \doxylink{modelo_8cpp}{src/lib/modelo.\+cpp} \doxylink{sistema_8cpp}{src/lib/sistema.\+cpp} -\/o bin/libmyv.\+so}\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{\texorpdfstring{compilar teste funcional}{compilar teste funcional}}\label{md__r_e_a_d_m_e_autotoc_md1}
+dentro de test/funcional execute\+: {\ttfamily g++ -\/Wall -\/Wextra \doxylink{test_2funcional_2main_8cpp}{test/funcional/main.\+cpp} \doxylink{funcional__tests_8cpp}{test/funcional/funcional\+\_\+tests.\+cpp} -\/Lbin -\/lmyv -\/o bin/funcional\+\_\+test}\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysection{\texorpdfstring{compilar testes unitários}{compilar testes unitários}}\label{md__r_e_a_d_m_e_autotoc_md2}
+dentro de test/unit execute\+: {\ttfamily g++ -\/Wall -\/Wextra \doxylink{test_2unit_2main_8cpp}{test/unit/main.\+cpp} \doxylink{unit__tests_8cpp}{test/unit/unit\+\_\+tests.\+cpp} -\/Lbin -\/lmyv -\/o bin/unit\+\_\+tests}\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysection{\texorpdfstring{compilar a main}{compilar a main}}\label{md__r_e_a_d_m_e_autotoc_md3}
+dentro de src execute\+: {\ttfamily g++ main.\+cpp -\/L..\textbackslash{}bin -\/lmyv -\/o ..\textbackslash{}bin\textbackslash{}main.\+exe}\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysection{\texorpdfstring{execução}{execução}}\label{md__r_e_a_d_m_e_autotoc_md4}
+Os executaveis e as bibliotecas serão direcionados ao diretorio bin, as vezes ao executar os exe esta dando erro de linkagem, porem é somente rodar o comando {\ttfamily export LD\+\_\+\+LIBRARY\+\_\+\+PATH=.} dentro do bin e rodar os executaveis\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysection{\texorpdfstring{makefile}{makefile}}\label{md__r_e_a_d_m_e_autotoc_md5}
+{\ttfamily make run} \+: Compila a biblioteca libmyv.\+so e o executável principal main e após isso iro executálos cuidando automaticamente do LD\+\_\+\+LIBRARY\+\_\+\+PATH
+
+{\ttfamily make test\+\_\+func} \+: Compila a biblioteca (se necessário) e o executável funcional\+\_\+test
+
+{\ttfamily make test\+\_\+unit} \+: Compila a biblioteca (se necessário) e o executável unit\+\_\+test
+
+{\ttfamily make run\+\_\+tests} \+: Ele vai compilar os dois testes (se necessário) e depois executá-\/los, cuidando automaticamente do LD\+\_\+\+LIBRARY\+\_\+\+PATH
+
+{\ttfamily make clean} \+: Limpa a pasta bin/, removendo todos os arquivos compilados 

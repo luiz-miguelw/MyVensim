@@ -1,0 +1,360 @@
+\doxysection{Fluxo Class Reference}
+\hypertarget{class_fluxo}{}\label{class_fluxo}\index{Fluxo@{Fluxo}}
+
+
+Representa a transferência de valor entre dois Sistemas.  
+
+
+
+
+{\ttfamily \#include $<$fluxo.\+h$>$}
+
+
+
+Collaboration diagram for Fluxo\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_fluxo__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fluxo_a6ca93a624218cd62f1ab6356be156be1}{Fluxo}} (const std\+::string \&\mbox{\hyperlink{class_fluxo_aac7f3a50b1b6af397610cf05820c8c11}{nome}}="{}"{}, \mbox{\hyperlink{class_sistema}{Sistema}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_fluxo_a981edf5b8ae600ba8795805e62542ed4}{origem}}=nullptr, \mbox{\hyperlink{class_sistema}{Sistema}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_fluxo_a97df02b8b7e21fa05f17d0e1c67cec22}{destino}}=nullptr, std\+::function$<$ double()$>$ \mbox{\hyperlink{class_fluxo_a4b6b3ba1f60d030908228c9254158932}{equacao}}=nullptr)
+\begin{DoxyCompactList}\small\item\em Construtor Padrão. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fluxo_a8ecf0f35010b95ac7a3910a6c82292f0}{Fluxo}} (const \mbox{\hyperlink{class_fluxo}{Fluxo}} \&obj)
+\begin{DoxyCompactList}\small\item\em Construtor de Cópia. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_fluxo_a92087e68af6452d4bec82a1d62969923}{\texorpdfstring{$\sim$}{\string~}\+Fluxo}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fluxo}{Fluxo}} \& \mbox{\hyperlink{class_fluxo_ade2573a2735cce9821b3c34a41196b7d}{operator=}} (const \mbox{\hyperlink{class_fluxo}{Fluxo}} \&obj)
+\begin{DoxyCompactList}\small\item\em Operador de atribuição. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_fluxo_a45e12976ddcf2ad4ef468f3131e22f41}{get\+Nome}} ()
+\begin{DoxyCompactList}\small\item\em Obtém o nome do fluxo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fluxo_a9984cc1540bace0b307f9c50b7e52c90}{set\+Nome}} (const std\+::string \&novo\+\_\+nome)
+\begin{DoxyCompactList}\small\item\em Define o nome do fluxo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sistema}{Sistema}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_fluxo_a61d7665229f1880963cd666c033a71d1}{get\+Origem}} ()
+\begin{DoxyCompactList}\small\item\em Obtém o sistema de origem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fluxo_ac37b1a148c21c5dadcedf7d018dde8a6}{set\+Origem}} (\mbox{\hyperlink{class_sistema}{Sistema}} \texorpdfstring{$\ast$}{*}novo\+\_\+origem)
+\begin{DoxyCompactList}\small\item\em Define o sistema de origem. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sistema}{Sistema}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_fluxo_ae24fd783f11f0b7dde1372071e8d4bc2}{get\+Destino}} ()
+\begin{DoxyCompactList}\small\item\em Obtém o sistema de destino. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fluxo_a558b139dc88aeef5038332ae71d1380b}{set\+Destino}} (\mbox{\hyperlink{class_sistema}{Sistema}} \texorpdfstring{$\ast$}{*}novo\+\_\+destino)
+\begin{DoxyCompactList}\small\item\em Define o sistema de destino. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_fluxo_abaad646df8adca5239f2d3e022001882}{calcular\+Equacao}} ()
+\begin{DoxyCompactList}\small\item\em Executa a equação do fluxo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fluxo_ae3698724d4b401c01ab0473a25d2ac3e}{set\+Equacao}} (std\+::function$<$ double()$>$ nova\+\_\+equacao)
+\begin{DoxyCompactList}\small\item\em Define a equação que rege o fluxo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_fluxo_aac7f3a50b1b6af397610cf05820c8c11}{nome}}
+\item 
+\mbox{\hyperlink{class_sistema}{Sistema}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_fluxo_a981edf5b8ae600ba8795805e62542ed4}{origem}}
+\item 
+\mbox{\hyperlink{class_sistema}{Sistema}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_fluxo_a97df02b8b7e21fa05f17d0e1c67cec22}{destino}}
+\item 
+std\+::function$<$ double()$>$ \mbox{\hyperlink{class_fluxo_a4b6b3ba1f60d030908228c9254158932}{equacao}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa a transferência de valor entre dois Sistemas. 
+
+
+\begin{DoxyItemize}
+\item O \doxylink{class_fluxo}{Fluxo} conecta um sistema de origem a um sistema de destino e utiliza uma equação (função) para determinar quanto deve ser transferido a cada passo de tempo. 
+\end{DoxyItemize}
+
+\label{doc-constructors}
+\Hypertarget{class_fluxo_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_fluxo_a6ca93a624218cd62f1ab6356be156be1}\index{Fluxo@{Fluxo}!Fluxo@{Fluxo}}
+\index{Fluxo@{Fluxo}!Fluxo@{Fluxo}}
+\doxysubsubsection{\texorpdfstring{Fluxo()}{Fluxo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_fluxo_a6ca93a624218cd62f1ab6356be156be1} 
+Fluxo\+::\+Fluxo (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nome}{ = {\ttfamily "{}"{}}, }\item[{\mbox{\hyperlink{class_sistema}{Sistema}} \texorpdfstring{$\ast$}{*}}]{origem}{ = {\ttfamily nullptr}, }\item[{\mbox{\hyperlink{class_sistema}{Sistema}} \texorpdfstring{$\ast$}{*}}]{destino}{ = {\ttfamily nullptr}, }\item[{std\+::function$<$ double()$>$}]{equacao}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})}
+
+
+
+Construtor Padrão. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome} & Nome do fluxo. \\
+\hline
+{\em origem} & Ponteiro para sistema de origem. \\
+\hline
+{\em destino} & Ponteiro para sistema de destino. \\
+\hline
+{\em equacao} & Função que retorna o valor do fluxo. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{class_fluxo_a6ca93a624218cd62f1ab6356be156be1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{class_fluxo_a6ca93a624218cd62f1ab6356be156be1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_fluxo_a8ecf0f35010b95ac7a3910a6c82292f0}\index{Fluxo@{Fluxo}!Fluxo@{Fluxo}}
+\index{Fluxo@{Fluxo}!Fluxo@{Fluxo}}
+\doxysubsubsection{\texorpdfstring{Fluxo()}{Fluxo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_fluxo_a8ecf0f35010b95ac7a3910a6c82292f0} 
+Fluxo\+::\+Fluxo (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fluxo}{Fluxo}} \&}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Construtor de Cópia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & Objeto \doxylink{class_fluxo}{Fluxo} a ser copiado. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{class_fluxo_a8ecf0f35010b95ac7a3910a6c82292f0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_fluxo_a92087e68af6452d4bec82a1d62969923}\index{Fluxo@{Fluxo}!````~Fluxo@{\texorpdfstring{$\sim$}{\string~}Fluxo}}
+\index{````~Fluxo@{\texorpdfstring{$\sim$}{\string~}Fluxo}!Fluxo@{Fluxo}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Fluxo()}{\string~Fluxo()}}
+{\footnotesize\ttfamily \label{class_fluxo_a92087e68af6452d4bec82a1d62969923} 
+Fluxo\+::\texorpdfstring{$\sim$}{\string~}\+Fluxo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destrutor virtual. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_fluxo_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_fluxo_abaad646df8adca5239f2d3e022001882}\index{Fluxo@{Fluxo}!calcularEquacao@{calcularEquacao}}
+\index{calcularEquacao@{calcularEquacao}!Fluxo@{Fluxo}}
+\doxysubsubsection{\texorpdfstring{calcularEquacao()}{calcularEquacao()}}
+{\footnotesize\ttfamily \label{class_fluxo_abaad646df8adca5239f2d3e022001882} 
+double Fluxo\+::calcular\+Equacao (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Executa a equação do fluxo. 
+
+\begin{DoxyReturn}{Returns}
+Double com o valor calculado pela equação. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_fluxo_abaad646df8adca5239f2d3e022001882_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_fluxo_ae24fd783f11f0b7dde1372071e8d4bc2}\index{Fluxo@{Fluxo}!getDestino@{getDestino}}
+\index{getDestino@{getDestino}!Fluxo@{Fluxo}}
+\doxysubsubsection{\texorpdfstring{getDestino()}{getDestino()}}
+{\footnotesize\ttfamily \label{class_fluxo_ae24fd783f11f0b7dde1372071e8d4bc2} 
+\mbox{\hyperlink{class_sistema}{Sistema}} \texorpdfstring{$\ast$}{*} Fluxo\+::get\+Destino (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtém o sistema de destino. 
+
+\begin{DoxyReturn}{Returns}
+Ponteiro para \doxylink{class_sistema}{Sistema}. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_fluxo_ae24fd783f11f0b7dde1372071e8d4bc2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_fluxo_a45e12976ddcf2ad4ef468f3131e22f41}\index{Fluxo@{Fluxo}!getNome@{getNome}}
+\index{getNome@{getNome}!Fluxo@{Fluxo}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily \label{class_fluxo_a45e12976ddcf2ad4ef468f3131e22f41} 
+string Fluxo\+::get\+Nome (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtém o nome do fluxo. 
+
+\begin{DoxyReturn}{Returns}
+String com o nome. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{class_fluxo_a45e12976ddcf2ad4ef468f3131e22f41_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_fluxo_a61d7665229f1880963cd666c033a71d1}\index{Fluxo@{Fluxo}!getOrigem@{getOrigem}}
+\index{getOrigem@{getOrigem}!Fluxo@{Fluxo}}
+\doxysubsubsection{\texorpdfstring{getOrigem()}{getOrigem()}}
+{\footnotesize\ttfamily \label{class_fluxo_a61d7665229f1880963cd666c033a71d1} 
+\mbox{\hyperlink{class_sistema}{Sistema}} \texorpdfstring{$\ast$}{*} Fluxo\+::get\+Origem (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtém o sistema de origem. 
+
+\begin{DoxyReturn}{Returns}
+Ponteiro para \doxylink{class_sistema}{Sistema}. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_fluxo_a61d7665229f1880963cd666c033a71d1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_fluxo_ade2573a2735cce9821b3c34a41196b7d}\index{Fluxo@{Fluxo}!operator=@{operator=}}
+\index{operator=@{operator=}!Fluxo@{Fluxo}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_fluxo_ade2573a2735cce9821b3c34a41196b7d} 
+\mbox{\hyperlink{class_fluxo}{Fluxo}} \& Fluxo\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fluxo}{Fluxo}} \&}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Operador de atribuição. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \doxylink{class_fluxo}{Fluxo} a ser copiado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referência para o objeto. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{class_fluxo_ade2573a2735cce9821b3c34a41196b7d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_fluxo_a558b139dc88aeef5038332ae71d1380b}\index{Fluxo@{Fluxo}!setDestino@{setDestino}}
+\index{setDestino@{setDestino}!Fluxo@{Fluxo}}
+\doxysubsubsection{\texorpdfstring{setDestino()}{setDestino()}}
+{\footnotesize\ttfamily \label{class_fluxo_a558b139dc88aeef5038332ae71d1380b} 
+void Fluxo\+::set\+Destino (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sistema}{Sistema}} \texorpdfstring{$\ast$}{*}}]{novo\+\_\+destino}{}\end{DoxyParamCaption})}
+
+
+
+Define o sistema de destino. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em novo\+\_\+destino} & Ponteiro para o novo sistema de destino. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_fluxo_ae3698724d4b401c01ab0473a25d2ac3e}\index{Fluxo@{Fluxo}!setEquacao@{setEquacao}}
+\index{setEquacao@{setEquacao}!Fluxo@{Fluxo}}
+\doxysubsubsection{\texorpdfstring{setEquacao()}{setEquacao()}}
+{\footnotesize\ttfamily \label{class_fluxo_ae3698724d4b401c01ab0473a25d2ac3e} 
+void Fluxo\+::set\+Equacao (\begin{DoxyParamCaption}\item[{std\+::function$<$ double()$>$}]{nova\+\_\+equacao}{}\end{DoxyParamCaption})}
+
+
+
+Define a equação que rege o fluxo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nova\+\_\+equacao} & Função do tipo std\+::function$<$double()$>$. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_fluxo_ae3698724d4b401c01ab0473a25d2ac3e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_fluxo_a9984cc1540bace0b307f9c50b7e52c90}\index{Fluxo@{Fluxo}!setNome@{setNome}}
+\index{setNome@{setNome}!Fluxo@{Fluxo}}
+\doxysubsubsection{\texorpdfstring{setNome()}{setNome()}}
+{\footnotesize\ttfamily \label{class_fluxo_a9984cc1540bace0b307f9c50b7e52c90} 
+void Fluxo\+::set\+Nome (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{novo\+\_\+nome}{}\end{DoxyParamCaption})}
+
+
+
+Define o nome do fluxo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em novo\+\_\+nome} & Novo nome. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_fluxo_ac37b1a148c21c5dadcedf7d018dde8a6}\index{Fluxo@{Fluxo}!setOrigem@{setOrigem}}
+\index{setOrigem@{setOrigem}!Fluxo@{Fluxo}}
+\doxysubsubsection{\texorpdfstring{setOrigem()}{setOrigem()}}
+{\footnotesize\ttfamily \label{class_fluxo_ac37b1a148c21c5dadcedf7d018dde8a6} 
+void Fluxo\+::set\+Origem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sistema}{Sistema}} \texorpdfstring{$\ast$}{*}}]{novo\+\_\+origem}{}\end{DoxyParamCaption})}
+
+
+
+Define o sistema de origem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em novo\+\_\+origem} & Ponteiro para o novo sistema de origem. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_fluxo_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_fluxo_a97df02b8b7e21fa05f17d0e1c67cec22}\index{Fluxo@{Fluxo}!destino@{destino}}
+\index{destino@{destino}!Fluxo@{Fluxo}}
+\doxysubsubsection{\texorpdfstring{destino}{destino}}
+{\footnotesize\ttfamily \label{class_fluxo_a97df02b8b7e21fa05f17d0e1c67cec22} 
+\mbox{\hyperlink{class_sistema}{Sistema}}\texorpdfstring{$\ast$}{*} Fluxo\+::destino\hspace{0.3cm}{\ttfamily [private]}}
+
+Ponteiro para o sistema de destino. \Hypertarget{class_fluxo_a4b6b3ba1f60d030908228c9254158932}\index{Fluxo@{Fluxo}!equacao@{equacao}}
+\index{equacao@{equacao}!Fluxo@{Fluxo}}
+\doxysubsubsection{\texorpdfstring{equacao}{equacao}}
+{\footnotesize\ttfamily \label{class_fluxo_a4b6b3ba1f60d030908228c9254158932} 
+std\+::function$<$double()$>$ Fluxo\+::equacao\hspace{0.3cm}{\ttfamily [private]}}
+
+Função lambda ou functor que define a equação do fluxo. \Hypertarget{class_fluxo_aac7f3a50b1b6af397610cf05820c8c11}\index{Fluxo@{Fluxo}!nome@{nome}}
+\index{nome@{nome}!Fluxo@{Fluxo}}
+\doxysubsubsection{\texorpdfstring{nome}{nome}}
+{\footnotesize\ttfamily \label{class_fluxo_aac7f3a50b1b6af397610cf05820c8c11} 
+std\+::string Fluxo\+::nome\hspace{0.3cm}{\ttfamily [private]}}
+
+Nome do fluxo. \Hypertarget{class_fluxo_a981edf5b8ae600ba8795805e62542ed4}\index{Fluxo@{Fluxo}!origem@{origem}}
+\index{origem@{origem}!Fluxo@{Fluxo}}
+\doxysubsubsection{\texorpdfstring{origem}{origem}}
+{\footnotesize\ttfamily \label{class_fluxo_a981edf5b8ae600ba8795805e62542ed4} 
+\mbox{\hyperlink{class_sistema}{Sistema}}\texorpdfstring{$\ast$}{*} Fluxo\+::origem\hspace{0.3cm}{\ttfamily [private]}}
+
+Ponteiro para o sistema de origem. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/lib/\mbox{\hyperlink{fluxo_8h}{fluxo.\+h}}\item 
+src/lib/\mbox{\hyperlink{fluxo_8cpp}{fluxo.\+cpp}}\end{DoxyCompactItemize}

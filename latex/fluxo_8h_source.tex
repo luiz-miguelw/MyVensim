@@ -1,0 +1,48 @@
+\doxysection{fluxo.\+h}
+\hypertarget{fluxo_8h_source}{}\label{fluxo_8h_source}\index{src/lib/fluxo.h@{src/lib/fluxo.h}}
+\mbox{\hyperlink{fluxo_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ FLUXO\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ FLUXO\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sistema_8h}{sistema.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_fluxo_a6ca93a624218cd62f1ab6356be156be1}{Fluxo}}\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ std::string\ \mbox{\hyperlink{class_fluxo_aac7f3a50b1b6af397610cf05820c8c11}{nome}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_sistema}{Sistema}}*\ \mbox{\hyperlink{class_fluxo_a981edf5b8ae600ba8795805e62542ed4}{origem}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_sistema}{Sistema}}*\ \mbox{\hyperlink{class_fluxo_a97df02b8b7e21fa05f17d0e1c67cec22}{destino}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ std::function<double()>\ \mbox{\hyperlink{class_fluxo_a4b6b3ba1f60d030908228c9254158932}{equacao}};\ }
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_fluxo_a6ca93a624218cd62f1ab6356be156be1}{Fluxo}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_fluxo_aac7f3a50b1b6af397610cf05820c8c11}{nome}}\ =\ \textcolor{stringliteral}{"{}"{}},\ \mbox{\hyperlink{class_sistema}{Sistema}}*\ \mbox{\hyperlink{class_fluxo_a981edf5b8ae600ba8795805e62542ed4}{origem}}\ =\ \textcolor{keyword}{nullptr},\ \mbox{\hyperlink{class_sistema}{Sistema}}*\ \mbox{\hyperlink{class_fluxo_a97df02b8b7e21fa05f17d0e1c67cec22}{destino}}\ =\ \textcolor{keyword}{nullptr},\ std::function<\textcolor{keywordtype}{double}()>\ \mbox{\hyperlink{class_fluxo_a4b6b3ba1f60d030908228c9254158932}{equacao}}\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_fluxo_a6ca93a624218cd62f1ab6356be156be1}{Fluxo}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_fluxo_a6ca93a624218cd62f1ab6356be156be1}{Fluxo}}\&\ obj);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_fluxo_a92087e68af6452d4bec82a1d62969923}{\string~Fluxo}}();}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_fluxo_a6ca93a624218cd62f1ab6356be156be1}{Fluxo}}\&\ \mbox{\hyperlink{class_fluxo_ade2573a2735cce9821b3c34a41196b7d}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_fluxo_a6ca93a624218cd62f1ab6356be156be1}{Fluxo}}\&\ obj);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00059\ \ \ \ \ std::string\ \mbox{\hyperlink{class_fluxo_a45e12976ddcf2ad4ef468f3131e22f41}{getNome}}();}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fluxo_a9984cc1540bace0b307f9c50b7e52c90}{setNome}}(\textcolor{keyword}{const}\ std::string\&\ novo\_nome);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00071\ \ \ \ \ \mbox{\hyperlink{class_sistema}{Sistema}}*\ \mbox{\hyperlink{class_fluxo_a61d7665229f1880963cd666c033a71d1}{getOrigem}}();}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fluxo_ac37b1a148c21c5dadcedf7d018dde8a6}{setOrigem}}(\mbox{\hyperlink{class_sistema}{Sistema}}*\ novo\_origem);}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00083\ \ \ \ \ \mbox{\hyperlink{class_sistema}{Sistema}}*\ \mbox{\hyperlink{class_fluxo_ae24fd783f11f0b7dde1372071e8d4bc2}{getDestino}}();}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fluxo_a558b139dc88aeef5038332ae71d1380b}{setDestino}}(\mbox{\hyperlink{class_sistema}{Sistema}}*\ novo\_destino);}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_fluxo_abaad646df8adca5239f2d3e022001882}{calcularEquacao}}();}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fluxo_ae3698724d4b401c01ab0473a25d2ac3e}{setEquacao}}(std::function<\textcolor{keywordtype}{double}()>\ nova\_equacao);}
+\DoxyCodeLine{00102\ \};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ FLUXO\_H}}
+
+\end{DoxyCode}

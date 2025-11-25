@@ -1,0 +1,298 @@
+\doxysection{Sistema Class Reference}
+\hypertarget{class_sistema}{}\label{class_sistema}\index{Sistema@{Sistema}}
+
+
+Representa um reservatório ou "{}estoque"{} na simulação de dinâmica de sistemas.  
+
+
+
+
+{\ttfamily \#include $<$sistema.\+h$>$}
+
+
+
+Collaboration diagram for Sistema\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{class_sistema__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sistema_acafe2feff82bd1b3bc4cb1e9cab21dfd}{Sistema}} (const std\+::string \&\mbox{\hyperlink{class_sistema_af94ab6d3f68122168a59403fb7750938}{nome}}="{}"{}, double valor\+\_\+inicial=0.\+0)
+\begin{DoxyCompactList}\small\item\em Construtor Padrão e de Inicialização. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sistema_a4281eaee1a088cbe7a712207da30cedd}{Sistema}} (const \mbox{\hyperlink{class_sistema}{Sistema}} \&obj)
+\begin{DoxyCompactList}\small\item\em Construtor de Cópia. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_sistema_aafc86e0f2c3d734fb4c0985f70c27a1a}{\texorpdfstring{$\sim$}{\string~}\+Sistema}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sistema}{Sistema}} \& \mbox{\hyperlink{class_sistema_ade64c99d4a8c7a61eced980c6734bca3}{operator=}} (const \mbox{\hyperlink{class_sistema}{Sistema}} \&obj)
+\begin{DoxyCompactList}\small\item\em Operador de atribuição. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_sistema_a8d3f0f7118e6d3f7ff9454fec892e946}{get\+Valor}} ()
+\begin{DoxyCompactList}\small\item\em Retorna o valor atual do sistema. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sistema_ac618fe3b5a876e73d50c572cfa84835f}{set\+Valor}} (double novo\+\_\+valor)
+\begin{DoxyCompactList}\small\item\em Define um novo valor para o sistema. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_sistema_aa4de729406de45cdd3244aab26705a0f}{get\+Nome}} ()
+\begin{DoxyCompactList}\small\item\em Retorna o nome do sistema. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sistema_a9a5f5b2b66e1e8a37bac62420f1d91b5}{set\+Nome}} (const std\+::string novo\+\_\+nome)
+\begin{DoxyCompactList}\small\item\em Define um novo nome para o sistema. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_sistema_adab259cbe82204653335948ffa62ef79}{valor}}
+\item 
+std\+::string \mbox{\hyperlink{class_sistema_af94ab6d3f68122168a59403fb7750938}{nome}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_sistema_ab38538037882351fed84bae0f5ec9132}{operator==}} (const \mbox{\hyperlink{class_sistema}{Sistema}} \&s1, const \mbox{\hyperlink{class_sistema}{Sistema}} \&s2)
+\begin{DoxyCompactList}\small\item\em Sobrecarga do operador de igualdade. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa um reservatório ou "{}estoque"{} na simulação de dinâmica de sistemas. 
+
+
+\begin{DoxyItemize}
+\item A classe \doxylink{class_sistema}{Sistema} armazena um valor (nível/estoque) e um nome. Ela é manipulada pelos fluxos durante a execução do modelo. 
+\end{DoxyItemize}
+
+\label{doc-constructors}
+\Hypertarget{class_sistema_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_sistema_acafe2feff82bd1b3bc4cb1e9cab21dfd}\index{Sistema@{Sistema}!Sistema@{Sistema}}
+\index{Sistema@{Sistema}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{Sistema()}{Sistema()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_sistema_acafe2feff82bd1b3bc4cb1e9cab21dfd} 
+Sistema\+::\+Sistema (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nome}{ = {\ttfamily "{}"{}}, }\item[{double}]{valor\+\_\+inicial}{ = {\ttfamily 0.0}}\end{DoxyParamCaption})}
+
+
+
+Construtor Padrão e de Inicialização. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome} & Nome do sistema (padrão\+: vazio). \\
+\hline
+{\em valor\+\_\+inicial} & Valor inicial do sistema (padrão\+: 0.\+0). \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{class_sistema_acafe2feff82bd1b3bc4cb1e9cab21dfd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{class_sistema_acafe2feff82bd1b3bc4cb1e9cab21dfd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_sistema_a4281eaee1a088cbe7a712207da30cedd}\index{Sistema@{Sistema}!Sistema@{Sistema}}
+\index{Sistema@{Sistema}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{Sistema()}{Sistema()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_sistema_a4281eaee1a088cbe7a712207da30cedd} 
+Sistema\+::\+Sistema (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sistema}{Sistema}} \&}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Construtor de Cópia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & Objeto \doxylink{class_sistema}{Sistema} a ser copiado. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{class_sistema_a4281eaee1a088cbe7a712207da30cedd_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_sistema_aafc86e0f2c3d734fb4c0985f70c27a1a}\index{Sistema@{Sistema}!````~Sistema@{\texorpdfstring{$\sim$}{\string~}Sistema}}
+\index{````~Sistema@{\texorpdfstring{$\sim$}{\string~}Sistema}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Sistema()}{\string~Sistema()}}
+{\footnotesize\ttfamily \label{class_sistema_aafc86e0f2c3d734fb4c0985f70c27a1a} 
+Sistema\+::\texorpdfstring{$\sim$}{\string~}\+Sistema (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destrutor virtual. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_sistema_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sistema_aa4de729406de45cdd3244aab26705a0f}\index{Sistema@{Sistema}!getNome@{getNome}}
+\index{getNome@{getNome}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily \label{class_sistema_aa4de729406de45cdd3244aab26705a0f} 
+std\+::string Sistema\+::get\+Nome (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Retorna o nome do sistema. 
+
+\begin{DoxyReturn}{Returns}
+String com o nome. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sistema_aa4de729406de45cdd3244aab26705a0f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_sistema_a8d3f0f7118e6d3f7ff9454fec892e946}\index{Sistema@{Sistema}!getValor@{getValor}}
+\index{getValor@{getValor}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{getValor()}{getValor()}}
+{\footnotesize\ttfamily \label{class_sistema_a8d3f0f7118e6d3f7ff9454fec892e946} 
+double Sistema\+::get\+Valor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Retorna o valor atual do sistema. 
+
+\begin{DoxyReturn}{Returns}
+Double contendo o valor. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sistema_a8d3f0f7118e6d3f7ff9454fec892e946_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_sistema_ade64c99d4a8c7a61eced980c6734bca3}\index{Sistema@{Sistema}!operator=@{operator=}}
+\index{operator=@{operator=}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_sistema_ade64c99d4a8c7a61eced980c6734bca3} 
+\mbox{\hyperlink{class_sistema}{Sistema}} \& Sistema\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sistema}{Sistema}} \&}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Operador de atribuição. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & Objeto a ser atribuído. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referência para o próprio objeto atualizado. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{class_sistema_ade64c99d4a8c7a61eced980c6734bca3_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_sistema_a9a5f5b2b66e1e8a37bac62420f1d91b5}\index{Sistema@{Sistema}!setNome@{setNome}}
+\index{setNome@{setNome}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{setNome()}{setNome()}}
+{\footnotesize\ttfamily \label{class_sistema_a9a5f5b2b66e1e8a37bac62420f1d91b5} 
+void Sistema\+::set\+Nome (\begin{DoxyParamCaption}\item[{const std\+::string}]{novo\+\_\+nome}{}\end{DoxyParamCaption})}
+
+
+
+Define um novo nome para o sistema. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em novo\+\_\+nome} & String contendo o novo nome. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sistema_a9a5f5b2b66e1e8a37bac62420f1d91b5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_sistema_ac618fe3b5a876e73d50c572cfa84835f}\index{Sistema@{Sistema}!setValor@{setValor}}
+\index{setValor@{setValor}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{setValor()}{setValor()}}
+{\footnotesize\ttfamily \label{class_sistema_ac618fe3b5a876e73d50c572cfa84835f} 
+void Sistema\+::set\+Valor (\begin{DoxyParamCaption}\item[{double}]{novo\+\_\+valor}{}\end{DoxyParamCaption})}
+
+
+
+Define um novo valor para o sistema. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em novo\+\_\+valor} & O novo valor a ser atribuído (valores negativos tornam-\/se 0). \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sistema_ac618fe3b5a876e73d50c572cfa84835f_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-related-members}
+\Hypertarget{class_sistema_doc-related-members}
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_sistema_ab38538037882351fed84bae0f5ec9132}\index{Sistema@{Sistema}!operator==@{operator==}}
+\index{operator==@{operator==}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{operator==}{operator==}}
+{\footnotesize\ttfamily \label{class_sistema_ab38538037882351fed84bae0f5ec9132} 
+bool operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sistema}{Sistema}} \&}]{s1}{, }\item[{const \mbox{\hyperlink{class_sistema}{Sistema}} \&}]{s2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Sobrecarga do operador de igualdade. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s1} & Primeiro sistema. \\
+\hline
+{\em s2} & Segundo sistema. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se nome e valor forem iguais, False caso contrário. 
+\end{DoxyReturn}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_sistema_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_sistema_af94ab6d3f68122168a59403fb7750938}\index{Sistema@{Sistema}!nome@{nome}}
+\index{nome@{nome}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{nome}{nome}}
+{\footnotesize\ttfamily \label{class_sistema_af94ab6d3f68122168a59403fb7750938} 
+std\+::string Sistema\+::nome\hspace{0.3cm}{\ttfamily [private]}}
+
+Nome de identificação do sistema. \Hypertarget{class_sistema_adab259cbe82204653335948ffa62ef79}\index{Sistema@{Sistema}!valor@{valor}}
+\index{valor@{valor}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{valor}{valor}}
+{\footnotesize\ttfamily \label{class_sistema_adab259cbe82204653335948ffa62ef79} 
+double Sistema\+::valor\hspace{0.3cm}{\ttfamily [private]}}
+
+Valor armazenado no sistema (estoque). 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/lib/\mbox{\hyperlink{sistema_8h}{sistema.\+h}}\item 
+src/lib/\mbox{\hyperlink{sistema_8cpp}{sistema.\+cpp}}\end{DoxyCompactItemize}

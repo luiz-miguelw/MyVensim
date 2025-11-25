@@ -1,0 +1,11 @@
+<map id="testSistemaUnit" name="testSistemaUnit">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,81,121,108"/>
+<area shape="rect" id="Node000002" href="$class_sistema.html#aa4de729406de45cdd3244aab26705a0f" title="Retorna o nome do sistema." alt="" coords="169,5,299,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,78,168,42,185,37,180,40,170,46,93,83"/>
+<area shape="rect" id="Node000003" href="$class_sistema.html#a8d3f0f7118e6d3f7ff9454fec892e946" title="Retorna o valor atual do sistema." alt="" coords="172,56,296,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="120,84,158,80,154,82,122,89"/>
+<area shape="rect" id="Node000004" href="$class_sistema.html#a9a5f5b2b66e1e8a37bac62420f1d91b5" title="Define um novo nome para o sistema." alt="" coords="169,107,299,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="121,101,156,107,151,109,122,106"/>
+<area shape="rect" id="Node000005" href="$class_sistema.html#ac618fe3b5a876e73d50c572cfa84835f" title="Define um novo valor para o sistema." alt="" coords="172,157,296,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="92,106,170,143,185,151,180,151,168,148,91,111"/>
+</map>

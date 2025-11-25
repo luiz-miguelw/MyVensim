@@ -1,0 +1,6 @@
+<map id="Fluxo::Fluxo" name="Fluxo::Fluxo">
+<area shape="rect" id="Node000001" title="Construtor de Cópia." alt="" coords="5,29,99,56"/>
+<area shape="rect" id="Node000002" href="$class_fluxo.html#a6ca93a624218cd62f1ab6356be156be1" title="Construtor Padrão." alt="" coords="147,29,240,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,40,134,42,128,43,99,45"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="168,28,164,21,167,11,177,5,193,3,211,5,221,15,216,14,209,10,193,8,179,10,171,14,170,20,173,30"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Fluxo" name="Fluxo">
+<area shape="rect" id="Node000001" title="Representa a transferência de valor entre dois Sistemas." alt="" coords="5,339,133,664"/>
+<area shape="rect" id="Node000002" href="$class_sistema.html" title="Representa um reservatório ou &quot;estoque&quot; na simulação de dinâmica de sistemas." alt="" coords="25,5,113,245"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,243,72,322,67,321,69,248"/>
+</map>

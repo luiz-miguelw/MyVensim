@@ -11,12 +11,10 @@
 void testSistemaUnit() {
     std::cout << "  Executando Teste Unitario: Sistema..." << std::endl;
 
-    // Teste de construtor e getters
     Sistema s("pop", 120.5);
     assert(s.getNome() == "pop");
     assert(std::abs(s.getValor() - 120.5) < 0.001);
 
-    // Teste de setter e getter
     s.setValor(50.2);
     assert(std::abs(s.getValor() - 50.2) < 0.001);
 
@@ -51,20 +49,19 @@ void testModeloUnit() {
     
     Modelo m("modelo1");
 
-    // Teste de criação de Sistema
     Sistema s1("s1", 10.0);
     assert(s1.getNome() == "s1");
     assert(std::abs(s1.getValor() - 10.0) < 0.001);
 
     Sistema s2("s2", 20.0);
     assert(s2.getNome() == "s2");
-    // Teste de criação de Fluxo
+   
     Fluxo f1("f1", &s1, &s2);
     assert(f1.getOrigem() == &s1);
     assert(f1.getDestino() == &s2);
     f1.setEquacao([&]() { return 1;});
 
-    // Adiciona Sistemas e Fluxos ao Modelo
+    
     m.adicionarSistema(s1);
     m.adicionarSistema(s2);
     m.adicionarFluxo(f1);

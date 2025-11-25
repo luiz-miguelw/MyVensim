@@ -1,0 +1,10 @@
+<map id="Fluxo::getDestino" name="Fluxo::getDestino">
+<area shape="rect" id="Node000001" title="Obtém o sistema de destino." alt="" coords="260,31,384,57"/>
+<area shape="rect" id="Node000002" href="$unit__tests_8cpp.html#a02d4a1e9fc919d5ad6ecbc82b99a6a02" title=" " alt="" coords="108,5,207,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,32,207,29,207,24,247,32"/>
+<area shape="rect" id="Node000004" href="$unit__tests_8cpp.html#ad2979d0f1872baba9cbe2e4127f52442" title=" " alt="" coords="103,56,212,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="247,56,213,64,212,58,242,56"/>
+<area shape="rect" id="Node000003" href="$test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,55,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,33,56,42,54,37,94,30"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="85,57,55,52,55,46,89,54"/>
+</map>

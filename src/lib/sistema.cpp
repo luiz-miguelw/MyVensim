@@ -7,6 +7,24 @@ Sistema::Sistema(const string& nome, double valor_inicial) {
     setValor(valor_inicial);
 }
 
+Sistema::Sistema(const Sistema& obj) {
+    this->nome = obj.nome;
+    this->valor = obj.valor;
+}
+
+Sistema::~Sistema() {
+    // Não há alocação dinâmica manual para limpar aqui
+}
+
+Sistema& Sistema::operator=(const Sistema& obj) {
+    if (this == &obj) {
+        return *this;
+    }
+    this->nome = obj.nome;
+    this->valor = obj.valor;
+    return *this;
+}
+
 double Sistema::getValor() {
     return this->valor;
 }

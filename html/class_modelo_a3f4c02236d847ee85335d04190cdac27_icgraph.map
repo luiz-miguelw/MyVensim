@@ -1,0 +1,8 @@
+<map id="Modelo::Modelo" name="Modelo::Modelo">
+<area shape="rect" id="Node000001" title="Construtor Padrão." alt="" coords="180,31,293,57"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="263,15,255,12,236,9,219,11,210,16,208,21,212,31,207,29,202,22,206,12,217,6,236,4,257,7,269,16"/>
+<area shape="rect" id="Node000002" href="$class_modelo.html#a297ab23dae462857934b6effe932e2f4" title="Construtor de Cópia." alt="" coords="12,5,125,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,34,126,30,126,25,167,32"/>
+<area shape="rect" id="Node000003" href="$class_modelo.html#a310314a57e6212c107770625c187af53" title="Operador de atribuição." alt="" coords="5,56,132,83"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="162,55,132,62,132,57,167,54"/>
+</map>

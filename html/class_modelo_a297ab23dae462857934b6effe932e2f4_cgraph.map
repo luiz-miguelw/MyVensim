@@ -1,0 +1,6 @@
+<map id="Modelo::Modelo" name="Modelo::Modelo">
+<area shape="rect" id="Node000001" title="Construtor de Cópia." alt="" coords="5,29,119,56"/>
+<area shape="rect" id="Node000002" href="$class_modelo.html#a3f4c02236d847ee85335d04190cdac27" title="Construtor Padrão." alt="" coords="167,29,280,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,40,153,42,148,43,119,45"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="195,28,190,21,194,11,205,5,223,3,243,5,254,15,249,14,241,10,223,8,207,10,198,15,196,20,200,30"/>
+</map>

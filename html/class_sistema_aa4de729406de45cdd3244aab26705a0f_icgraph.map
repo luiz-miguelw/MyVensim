@@ -1,0 +1,10 @@
+<map id="Sistema::getNome" name="Sistema::getNome">
+<area shape="rect" id="Node000001" title="Retorna o nome do sistema." alt="" coords="266,31,396,57"/>
+<area shape="rect" id="Node000002" href="$unit__tests_8cpp.html#ad2979d0f1872baba9cbe2e4127f52442" title=" " alt="" coords="106,5,215,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,32,215,29,215,24,253,32"/>
+<area shape="rect" id="Node000004" href="$unit__tests_8cpp.html#ac02d657e6a64f4a82a762e836bca1335" title=" " alt="" coords="103,56,218,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="254,56,219,63,218,58,248,56"/>
+<area shape="rect" id="Node000003" href="$test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,55,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="88,34,56,42,54,37,92,31"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="85,56,55,51,55,46,90,54"/>
+</map>
