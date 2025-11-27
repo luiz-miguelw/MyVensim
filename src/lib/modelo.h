@@ -73,17 +73,40 @@ public:
      */
     void adicionarFluxo(Fluxo fluxo);
 
-    /**
-     * @brief Acessa o vetor de sistemas.
-     * @return Referência para o vetor de sistemas.
-     */
-    std::vector<Sistema>& getSistemas();
 
     /**
-     * @brief Acessa o vetor de fluxos.
-     * @return Referência para o vetor de fluxos.
+     * @brief Obtém o iterador para o inicio do vector de sistemas.
+     * @return Iterador para o início do vector de sistemas.
      */
-    std::vector<Fluxo>& getFluxos();
+    auto sistBegin(){
+        return sistemas.begin();
+    };
+
+    /**
+     * @brief Obtém o iterador para o fim do vector de sistemas.
+     * @return Iterador para o fim do vector de sistemas.
+     */
+    auto sistEnd(){
+        return sistemas.end();
+    };
+
+
+    /**
+     * @brief Obtém o iterador para o inicio do vector de fluxos.
+     * @return Iterador para o início do vector de fluxos.
+     */
+    auto fluxoBegin(){
+        return fluxos.begin();
+    };
+
+    /**
+     * @brief Obtém o iterador para o fim do vector de fluxos.
+     * @return Iterador para o fim do vector de fluxos.
+     */
+    auto fluxoEnd(){
+        return fluxos.end();
+    };
+
 
     /**
      * @brief Executa a simulação.

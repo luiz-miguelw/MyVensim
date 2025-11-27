@@ -1,55 +1,43 @@
 # --- Variáveis de Compilação ---
-# Define o compilador que queremos usar (GNU C++)
 CXX = g++
-
-# Define as flags do compilador (mostra todos os avisos)
 CXXFLAGS = -Wall -Wextra
 
 # --- Variáveis do Projeto ---
-# Diretório de saída para os arquivos compilados
 BIN_DIR = bin
 
-# Nome da nossa biblioteca compartilhada (Shared Object do Linux)
+# --- Biblioteca (DLL/SO) ---
 LIB_NAME = libmyv.so
 LIB_TARGET = $(BIN_DIR)/$(LIB_NAME)
-
-# Arquivos .cpp que compõem a biblioteca
 LIB_SOURCES = src/lib/fluxo.cpp src/lib/modelo.cpp src/lib/sistema.cpp
 
-# --- Flags de Linkagem ---
-# Diz ao linker para procurar bibliotecas no diretório 'bin'
-LDFLAGS = -L$(BIN_DIR)
+# --- Testes Unitários (NOVA LISTA DE ARQUIVOS) ---
+# Aqui listamos todos os arquivos .cpp criados para o teste unitário
+UNIT_SOURCES = test/unit/main.cpp \
+               test/unit/unit_Sistema.cpp \
+               test/unit/unit_Fluxo.cpp \
+               test/unit/unit_Modelo.cpp
 
-# O nome da biblioteca que queremos linkar (o 'make' entende que -lmyv procura por 'libmyv.so')
+# --- Flags de Linkagem ---
+LDFLAGS = -L$(BIN_DIR)
 LDLIBS = -lmyv
 
 # --- Alvos (Targets) ---
 
-# O alvo padrão (o que é executado quando você digita apenas 'make')
-# .PHONY significa que 'all' não é um nome de arquivo real.
 .PHONY: all
 all: $(BIN_DIR)/main
 
-# 1. Alvo para construir a BIBLIOTECA (.so)
-# Este alvo depende dos arquivos .cpp da biblioteca.
-# Se qualquer um deles mudar, a biblioteca será recriada.
+# 1. Compila a Biblioteca
 $(LIB_TARGET): $(LIB_SOURCES)
 	@echo "--- Compilando a Biblioteca ($(LIB_TARGET)) ---"
 	@mkdir -p $(BIN_DIR)
 	$(CXX) -shared -fPIC $(LIB_SOURCES) -o $(LIB_TARGET)
 
-
-# 2. Alvo para construir o APLICATIVO PRINCIPAL (main)
-# Este alvo depende do 'src/main.cpp' e da nossa biblioteca.
-# O 'make' irá garantir que $(LIB_TARGET) seja construído ANTES deste.
+# 2. Compila o App Principal
 $(BIN_DIR)/main: src/main.cpp $(LIB_TARGET)
 	@echo "--- Compilando o Aplicativo Principal (main) ---"
-	# O comando para compilar o 'main' e linká-lo com a biblioteca
 	$(CXX) $(CXXFLAGS) src/main.cpp $(LDFLAGS) $(LDLIBS) -o $(BIN_DIR)/main
 
-
-# 3. Alvo para construir o TESTE FUNCIONAL
-# .PHONY para criar um "apelido"
+# 3. Compila Testes Funcionais
 .PHONY: test_func
 test_func: $(BIN_DIR)/funcional_test
 
@@ -57,17 +45,16 @@ $(BIN_DIR)/funcional_test: test/funcional/main.cpp test/funcional/funcional_test
 	@echo "--- Compilando Testes Funcionais ---"
 	$(CXX) $(CXXFLAGS) test/funcional/main.cpp test/funcional/funcional_tests.cpp $(LDFLAGS) $(LDLIBS) -o $(BIN_DIR)/funcional_test
 
-
-# 4. Alvo para construir o TESTE UNITÁRIO
+# 4. Compila Testes Unitários (ATUALIZADO)
 .PHONY: test_unit
 test_unit: $(BIN_DIR)/unit_tests
 
-$(BIN_DIR)/unit_tests: test/unit/main.cpp test/unit/unit_tests.cpp $(LIB_TARGET)
+# Agora depende da variável $(UNIT_SOURCES) que contém todos os arquivos novos
+$(BIN_DIR)/unit_tests: $(UNIT_SOURCES) $(LIB_TARGET)
 	@echo "--- Compilando Testes Unitários ---"
-	$(CXX) $(CXXFLAGS) test/unit/main.cpp test/unit/unit_tests.cpp $(LDFLAGS) $(LDLIBS) -o $(BIN_DIR)/unit_tests
+	$(CXX) $(CXXFLAGS) $(UNIT_SOURCES) $(LDFLAGS) $(LDLIBS) -o $(BIN_DIR)/unit_tests
 
-
-# 5. Alvo para EXECUTAR os testes (já resolve o problema do LD_LIBRARY_PATH)
+# 5. Executa os Testes
 .PHONY: run_tests
 run_tests: test_func test_unit
 	@echo "--- Executando Testes (Funcional e Unitário) ---"
@@ -75,19 +62,15 @@ run_tests: test_func test_unit
 	$(BIN_DIR)/funcional_test && \
 	$(BIN_DIR)/unit_tests
 
-
-# 6. Alvo para LIMPAR o projeto
-# Remove todos os arquivos do diretório 'bin'
+# 6. Limpeza
 .PHONY: clean
 clean:
 	@echo "--- Limpando o diretório bin ---"
 	-rm -f $(BIN_DIR)/*
 
-
-# 7. (NOVO) Alvo para EXECUTAR a aplicação principal
+# 7. Executa o App Principal
 .PHONY: run
 run: $(BIN_DIR)/main
 	@echo "--- Executando Aplicativo Principal ---"
-	@# Exporta o caminho da biblioteca e executa o 'main'
 	@export LD_LIBRARY_PATH=$(BIN_DIR) && \
 	$(BIN_DIR)/main

@@ -1,15 +1,14 @@
-#include "unit_tests.h"
-#include <iostream>
+#include "unit_Sistema.h"
+#include "unit_Fluxo.h"
+#include "unit_Modelo.h"
 
-int main() {
-    std::cout << "========= INICIANDO TESTES UNITARIOS =========" << std::endl;
+
+int main(){
     
-    testSistemaUnit();
-    testFluxoUnit();
-    testModeloUnit();
     
-    std::cout << "============================================" << std::endl;
-    std::cout << "TODOS OS TESTES UNITARIOS PASSARAM COM SUCESSO." << std::endl;
-    
-    return 0; 
+    run_unit_tests_Sistema();
+    run_unit_tests_Fluxo();
+    run_unit_tests_Modelo();
+
+    return 0;
 }
