@@ -33,11 +33,8 @@ void unit_Modelo_adicionarFluxo(void){
     Fluxo f("F1", &s1, &s2);
     m.adicionarFluxo(f);
 
-    // TESTE ATUALIZADO:
-    // 1. Verifica se a lista não está vazia
     assert(m.fluxoBegin() != m.fluxoEnd());
 
-    // 2. Verifica se o fluxo inserido tem o nome correto
     assert((*m.fluxoBegin()).getNome() == "F1");
     assert((*m.fluxoBegin()).getOrigem() == &s1);
 }
@@ -74,7 +71,7 @@ void unit_Modelo_assignmentOperator(void){
     m2 = m1;
     
     assert(m2.getNome() == "M1");
-    // Verifica se a cópia profunda do vetor funcionou usando os novos iteradores
+    
     assert(m2.sistBegin() != m2.sistEnd());
     assert((*m2.sistBegin()).getNome() == "S1");
 }
@@ -82,8 +79,8 @@ void unit_Modelo_assignmentOperator(void){
 void run_unit_tests_Modelo(void){
     unit_Modelo_constructor();
     unit_Modelo_destructor();
-    unit_Modelo_adicionarSistema(); // Agora descomentado e funcional
-    unit_Modelo_adicionarFluxo();   // Agora descomentado e funcional
+    unit_Modelo_adicionarSistema(); 
+    unit_Modelo_adicionarFluxo();   
     unit_Modelo_executa();
     unit_Modelo_assignmentOperator();
     std::cout << "Testes de Modelo OK!" << std::endl;

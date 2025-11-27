@@ -62,7 +62,7 @@ void unit_Fluxo_getDestino(void){
 
 void unit_Fluxo_setEquacao(void){
     Fluxo f;
-    // Lambda simples retornando 10.0
+    
     f.setEquacao([]() { return 10.0; }); 
     assert(std::abs(f.calcularEquacao() - 10.0) < 0.0001);
 }
